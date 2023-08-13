@@ -28,5 +28,3 @@ def calculator(num1: float, num2: float, *, operator: str):
             print("enter a valid operator.")
 
     return 0
-        
-print(calculator(1.0, 2.5, operator="-"))
