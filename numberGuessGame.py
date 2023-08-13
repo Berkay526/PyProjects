@@ -3,6 +3,9 @@ import random
 shot = 6
 difficulty = input("Select a difficulty (easy, med, hard): ")
 
+# this assignment is neccessary otherwise "num" will become an unbound variable in the while loop
+num: int = 0
+
 match difficulty:
     case "easy":
         num = random.randint(1, 50)
