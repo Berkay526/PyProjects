@@ -21,3 +21,5 @@ while user == "rock" or user == "paper" or user == "scissors":
             print("user won")
         case _:
             print("draw")
+else:
+    print('enter "rock", "paper" or "scissors"')
