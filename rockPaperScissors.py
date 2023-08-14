@@ -5,7 +5,7 @@ choices_list = ["rock", "paper", "scissors"]
 user: str = input("enter 'rock' for rock, 'scissors' for scissors and 'paper' for paper: ")
 bot = random.choice(choices_list)
 
-try:
+while user == "rock" or user == "paper" or user == "scissors":
     match user, bot:
         case "rock", "paper":
             print("bot won")
@@ -21,5 +21,3 @@ try:
             print("user won")
         case _:
             print("draw")
-except ValueError:
-    print("enter a valid choice")
