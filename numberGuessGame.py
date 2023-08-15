@@ -30,5 +30,5 @@ try:
             break
     else:
         print("You lost!")
-except ValueError:
+except TypeError:
     print("Enter an integer value")
