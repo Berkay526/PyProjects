@@ -5,28 +5,13 @@ choices_list = ["rock", "paper", "scissors"]
 user: str = input("enter 'rock' for rock, 'scissors' for scissors and 'paper' for paper: ")
 bot = random.choice(choices_list)
 
-while user == "rock" or user == "paper" or user == "scissors":
-    match user, bot:
-        case "rock", "paper":
-            print("bot won")
-            break
-        case "paper", "scissors":
-            print("bot won")
-            break
-        case "scissors", "rock":
-            print("bot won")
-            break
-        case "rock", "scissors":
-            print("user won")
-            break
-        case "paper", "rock":
-            print("user won")
-            break
-        case "scissors", "paper":
-            print("user won")
-            break
-        case _:
-            print("draw")
-            break
-else:
+if user != "rock" and user != "paper" and user != "scissors":
     print('enter "rock", "paper" or "scissors"')
+else:
+    player_status: list = [user, bot]
+    if player_status  == ["rock", "paper"] or player_status  == ["paper", "scissors"] or player_status  == ["scissors", "rock"]:
+        print("bot won")
+    elif player_status == ["paper", "rock"] or player_status  == ["scissors", "paper"] or player_status  == ["rock", "scissors"]:
+        print("user won")
+    else:
+        print("draw")
