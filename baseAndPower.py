@@ -18,7 +18,6 @@ while enter == "enter" or enter == "e":
         [print(items) for items in the_last_numbers]
     else:
         continue
-
     enter: str = input("enter 'enter' or 'e' if you want to enter numbers, enter 'no' or 'n' if you don\'t: ")
 else:
     print("quitting.")               
