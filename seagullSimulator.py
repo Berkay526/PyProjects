@@ -39,6 +39,7 @@ while catch != "q":
 
                     if seagull_hunger == 0:
                         print("You won!")
+                        catch = input('If you wanna play again, enter "catch" or "c" to try to catch a fish, you can quit the game using "q": ')
                     else:
                         catch = input('Enter "catch" or "c" to try to catch a fish, you can quit the game using "q": ')
                 else:
