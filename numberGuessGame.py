@@ -1,7 +1,7 @@
 import random
 
 shot = 6
-difficulty = input("Select a difficulty (easy, med, hard): ")
+difficulty = input("Select a difficulty (easy(between 1 and 50 both of are included), med(between 1 and 100 both of are included), hard(between 1 and 150 both of are included)): ")
 
 # this assignment is neccessary otherwise "num" will become an unbound variable in the while loop
 num: int = 0
